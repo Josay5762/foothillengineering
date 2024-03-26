@@ -53,9 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const searchTerm = searchInput.value.toLowerCase();
         const filteredTools = allTools.filter(tool =>
             tool.name.toLowerCase().includes(searchTerm) ||
-            tool.location.toLowerCase().includes(searchTerm) ||
-            tool.description.toLowerCase().includes(searchTerm) ||
-            tool.size.toLowerCase().includes(searchTerm)
+            tool.location.toLowerCase().includes(searchTerm)
         );
         displayResults(filteredTools);
     });
